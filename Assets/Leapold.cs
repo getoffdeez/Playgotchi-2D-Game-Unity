@@ -35,12 +35,12 @@ public class Leapold : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            myRigidBody2d.velocity = new Vector2(10f, 0f);
+            myRigidBody2d.velocity = new Vector2(-10f, 0f);
         }
 
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            myRigidBody2d.velocity = new Vector2(-10f, 0f);
+            myRigidBody2d.velocity = new Vector2(10f, 0f);
         }
 
     }
