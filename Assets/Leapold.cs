@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Leapold : MonoBehaviour
 {
+    public Rigidbody2D myRigidBody2d; 
+
     int numberOfTimes = 5;
     string nameOfTheKey = "Enter";
     float speedOfBreaking = 6.94f;
@@ -23,22 +25,22 @@ public class Leapold : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            print("Up Arrow Key was pressed");
+            myRigidBody2d.velocity = new Vector2(0f, 10f);
         }
 
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
-            print("Down Arrow Key was pressed");
+            myRigidBody2d.velocity = new Vector2(0f, -10f);
         }
 
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            print("Left Arrow Key was pressed");
+            myRigidBody2d.velocity = new Vector2(10f, 0f);
         }
 
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            print("Right Arrow Key was pressed");
+            myRigidBody2d.velocity = new Vector2(-10f, 0f);
         }
 
     }
