@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class Leapold : MonoBehaviour
 {
+    int numberOfTimes = 5;
+    string nameOfTheKey = "Enter";
+    float speedOfBreaking = 6.94f;
+
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Press the up key to jump");
-        Debug.Log("Press the right key to go forward");
-        Debug.LogWarning("Pressing the space key does nothing");
-        Debug.LogError("If you break your keyboard you will be keyless");
+        Debug.Log("If you press the up arrow you'll JUMP");
+        Debug.Log("If you Press the right arrow " + numberOfTimes + " you'll move!");
+
+        Debug.LogWarning("If you press the " + nameOfTheKey + ", nothing happens");
+        Debug.LogError("If you smash the keyboard at a speed of " + speedOfBreaking + " nothing happens, you just cry");
     }
 
     // Update is called once per frame
